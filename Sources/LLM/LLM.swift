@@ -7,7 +7,7 @@ public typealias Model = OpaquePointer
 public typealias Vocab = OpaquePointer
 public typealias Chat = (role: Role, content: String)
 
-public actor LLMCore {
+public class LLMCore {
     private let model: Model
     private let vocab: Vocab
     private var context: OpaquePointer
